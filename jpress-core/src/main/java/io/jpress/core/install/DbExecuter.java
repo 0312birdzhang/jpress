@@ -53,6 +53,7 @@ public class DbExecuter {
         this.jdbcUrl = "jdbc:mysql://" + dbHost + ":" + dbHostPort + "/" + dbName + "?"
                 + "useSSL=false&"
                 + "characterEncoding=utf8&"
+                + "allowPublicKeyRetrieval=true&"
                 + "zeroDateTimeBehavior=convertToNull";
 
         this.dataSourceConfig = new DataSourceConfig();
